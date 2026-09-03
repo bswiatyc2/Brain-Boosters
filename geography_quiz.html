@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Geography Quiz</title>
+    <link rel="stylesheet" href="css/style_sheet.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+    <script src="js/geographyQ.js" defer></script>
+    <script src="js/home.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Geography Quiz</h1>
+    </header>
+    <nav class="navbar">
+            <div class="logo"></div>
+            <ul class="nav-links">
+                <li><a href="home.html"><img src="images/logo.png" alt="Home Icon" width="150" height="150"></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="math.html">Math</a></li>
+                <li><a href="geography.html">Geography</a></li>
+                <li><a href="science.html">Science</a></li>
+                <li><img src="images/hackers.png" alt="Hackers" width="150" height="150" id="hackers"></li>
+            </ul>
+        </nav>
+
+    <article>
+      <h1>Geography Practice Quiz</h1>
+
+      <div id="container">
+         <div id="instructions">
+            <p>
+               Click the <strong>Start Quiz</strong> button below to begin the countdown.
+               When you submit, incorrect answers will be marked in red.
+               Retake the quiz as many times as you wish.
+            </p>
+
+            <button id="startquiz">Start Quiz</button>
+            <input id="quizclock" value="" />
+         </div>
+
+         <div id="quiz">
+            <table>
+               <tr>
+                  <td>1) What is the largest ocean on Earth?</td>
+                  <td><input id="question1" placeholder="Your answer" /></td>
+               </tr>
+
+               <tr>
+                  <td>2) What is the capital city of Japan?</td>
+                  <td><input id="question2" placeholder="Your answer" /></td>
+               </tr>
+
+               <tr>
+                  <td>3) Which continent is the Sahara Desert located on?</td>
+                  <td><input id="question3" placeholder="Your answer" /></td>
+               </tr>
+
+               <tr>
+                  <td>4) What river runs through Egypt?</td>
+                  <td><input id="question4" placeholder="Your answer" /></td>
+               </tr>
+
+               <tr>
+                  <td>5) What is the tallest mountain in the world?</td>
+                  <td><input id="question5" placeholder="Your answer" /></td>
+               </tr>
+            </table>
+
+            <button id="submitQuiz">Submit Quiz</button>
+         </div>
+
+         <div id="overlay" class="hidequiz"></div>
+      </div>
+   </article>
+    <footer id="last-modified-footer" style="margin-top: 40px; padding: 20px; text-align: center; background: #f0f0f0;"></footer>
+
+    <script src="js/geographyQ.js" defer></script>
+    <script src="js/home.js"></script>
+    <script src="js/lastModified.js"></script>
+    <div id="hack_pop" ></div>
+</body>
+</html>

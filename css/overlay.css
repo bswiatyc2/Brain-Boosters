@@ -1,0 +1,41 @@
+#hack_pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical centering */
+    align-items: center;     /* horizontal centering */
+
+    background-size: cover;      /* image fills entire background */
+    background-position: center; /* centered image */
+    background-repeat: no-repeat;
+
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+
+    display: none; /* hidden until JS shows it */
+}
+#hack_pop p {
+    /* Increase size */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+
+    /* Add spacing and style */
+    margin: 15px;
+    text-align: center;
+
+    /* Text Shadow makes it readable over any image color */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+
+    /* Optional: A subtle dark background behind the text only */
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
